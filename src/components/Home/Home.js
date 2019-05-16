@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Popup from '../Popup/Popup';
 import './Home.css'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-
-class Home extends Component {
+export class Home extends Component {
 
   constructor(props) {
     super(props);
@@ -18,23 +18,20 @@ class Home extends Component {
 
   render() {
     return (
-      <div className="bg">
-        <h1 style={{ paddingTop: 15, paddingLeft: 30 }}>Home Page</h1>
-        <h1 className="center">Welcome, Kittinan Chanpreecha</h1>
-        <div className="row marginTop">
-          <button className="btn1">Profile</button>
-          <button onClick={this.togglePopup.bind(this)} className="btn2">Do</button></div>
+        <div className="bg">
+          <h1 style={{ paddingTop: 15, paddingLeft: 30 }}>Home Page</h1>
+          <h1 className="center">Welcome, Kittinan Chanpreecha</h1>
+          <div className="row marginTop">
+            <Link to="/profile"><button className="btn-profile">Profile</button></Link>
+            <button onClick={this.togglePopup.bind(this)} className="btn-do">Do</button></div>
 
-        {this.state.showPopup ?
-          <Popup
-            closePopup={this.togglePopup.bind(this)}
-          />
-          : null
-        }
-      </div>
-
+          {this.state.showPopup ?
+            <Popup
+              closePopup={this.togglePopup.bind(this)}
+            />
+            : null
+          }
+        </div>
     );
   }
 }
-
-export default Home;

@@ -9,7 +9,7 @@ class Popup extends React.Component {
             <i onClick={this.props.closePopup} className="fa fa-close closePopup"/>
             <h1  className="title">ERROR</h1>
             <h2 className="desctiption">Can't do anything</h2>
-          <button className="button" onClick={this.props.closePopup}>OK</button>
+          <button className="btn-ok" onClick={this.props.closePopup}>OK</button>
           </div>
         </div>
       );

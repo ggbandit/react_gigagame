@@ -32,14 +32,14 @@
   padding: 10px 0;
 }
 
-.button {
+.btn-ok {
   border: 2px solid black;
   color: white;
   background-color: #004cff;
   border-radius: 8px;
   width: 200px;
-  padding: 5px 0;
-  margin-top: 15px;
+  padding: 3px 0;
+  margin-top: 10px;
   font-size: 35px;
   font-weight: bold;
 }
