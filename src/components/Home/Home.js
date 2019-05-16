@@ -19,15 +19,14 @@ class Home extends Component {
   render() {
     return (
       <div className="bg">
-        <h1 style={{paddingTop: 15,paddingLeft: 30}}>Home Page</h1>
+        <h1 style={{ paddingTop: 15, paddingLeft: 30 }}>Home Page</h1>
         <h1 className="center">Welcome, Kittinan Chanpreecha</h1>
         <div className="row marginTop">
-        <button className="btn1">Profile</button>
-        <button onClick={this.togglePopup.bind(this)} className="btn2">Do</button></div>
+          <button className="btn1">Profile</button>
+          <button onClick={this.togglePopup.bind(this)} className="btn2">Do</button></div>
 
         {this.state.showPopup ?
           <Popup
-            text='Click "Close Button" to hide popup'
             closePopup={this.togglePopup.bind(this)}
           />
           : null

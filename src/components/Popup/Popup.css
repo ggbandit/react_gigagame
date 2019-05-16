@@ -22,9 +22,9 @@
   margin: auto;
   background: white;
   color: #004cff;
-  text-align: center;  
+  text-align: center;
   border: 2px solid black;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .title,
@@ -36,9 +36,24 @@
   border: 2px solid black;
   color: white;
   background-color: #004cff;
-  border-radius: 5px;
+  border-radius: 8px;
   width: 200px;
   padding: 5px 0;
   margin-top: 15px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closePopup {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border: 2px solid black;
+  background-color: blue;
+  border-radius: 8px;
+  padding: 2px 5px;
+  color: white;
+  transition: all 200ms;
   font-size: 30px;
+  cursor: pointer;
 }
