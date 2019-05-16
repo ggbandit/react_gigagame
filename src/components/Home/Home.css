@@ -1,0 +1,42 @@
+.bg {
+    background-color: #004cff;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.center {
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.btn1 {
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: #004cff;
+    width: 280px;
+    padding: 10px 0;
+    margin-left: 20vw;
+    cursor: pointer;
+    font-weight: bold
+}
+
+.btn2 {
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    color: #004cff;
+    width: 280px;
+    padding: 10px 0;
+    margin-left: 20vw;
+    cursor: pointer;
+    font-weight: bold
+
+}
+
+.marginTop {
+    margin-top: 250px;
+}
